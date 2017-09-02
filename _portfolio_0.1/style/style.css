@@ -1,0 +1,20 @@
+﻿.logo img
+{max-height: 15vh;
+max-width: 70vh}
+.menu{
+background: rgb(30,24,26); /* Old browsers */
+background: -moz-linear-gradient(left, rgb(30,24,26) 0%, rgb(247,247,247) 93%, rgb(237,237,237) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgb(30,24,26) 0%,rgb(247,247,247) 93%,rgb(237,237,237) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgb(30,24,26) 0%,rgb(247,247,247) 93%,rgb(237,237,237) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e181a', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+font-family: Bickham Script Two;
+font-stretch:expanded;
+font-size: 5em;
+color: rgb(176,176,176);
+display: inline-block;
+}
+
+@font-face {
+  font-family: Bickham Script Two;
+  src: url("fonts/Bickham Script Two.ttf");
+}

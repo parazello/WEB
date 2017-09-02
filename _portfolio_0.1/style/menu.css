@@ -1,0 +1,71 @@
+﻿.menu{
+	width:100%;
+	list-style:none;
+	font-weight:bold;
+	margin-bottom:10px;
+	margin-left:20%;
+	margin-right:20%;
+	font-size: 24px;
+}
+.menu ul li{
+	float:left;
+	margin-right:5px;
+	position:relative;
+	display:block;
+}
+.menu ul li a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	background:#87CEFA;
+	text-decoration:none;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:4px;
+
+}
+.menu ul li a:hover{ /*наведение курсора на пункт меню*/
+	color:#fff;
+	background:#6495ED;
+	border: 3px outset black;
+	font-size: 120%;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+.menu .submenu{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	-webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+}
+.menu .submenu li{
+	padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+	float:none;
+}
+.menu .submenu a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+}
+.menu li:hover .submenu{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; /* Делаем непрозрачным */
+}
+.menu li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+	background:#6495ED;
+/*		font-size: 120%;*/
+
+}
+.menu li:hover submenu a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+	text-decoration:none;
+	-webkit-transition:-webkit-transform 0.075s linear;
+
+}
+.menu li:hover .submenu li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный подпункт меню*/
+	background:#6495ED;
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+	border: 3px outset black;
+		font-size: 120%;
+}
+
