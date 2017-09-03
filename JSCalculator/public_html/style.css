@@ -1,0 +1,50 @@
+/* 
+    Document   : style
+    Created on : 03.09.2017, 17:45:23
+    Author     : Кэлос
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+
+}
+
+.num_panel, .operators, .calc{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    display: flex;
+    width: 300px;
+    box-sizing: border-box;
+}
+.number, .op, .res {
+    width: 31%;
+    background-color: #42bcf4;
+    text-align: center;
+    border: black solid;
+    box-sizing: border-box;
+    margin: 3px;
+    border-radius: 15px;
+    flex-grow:2;
+    cursor: pointer;
+}
+
+.inp{
+      background-color: #42bcf4;
+      display: flex;
+}
+.calc
+{
+    background-color: #84cced;
+    text-align: center;
+    border: black solid;   
+}
+.output{
+      background-color: #42bcf4;
+      display: flex;
+}
