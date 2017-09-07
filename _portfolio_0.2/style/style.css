@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Bickham Script Two;
+  src: url("fonts/Bickham Script Two.ttf");}
+@font-face {  font-family: StudioScriptC;
+  src: url("fonts/StudioScriptC.otf"); 
+  }
+body{
+/*      background: rgb(30,24,26);  Old browsers 
+   background: -moz-linear-gradient(left, rgb(30,24,26) 0%, rgb(247,247,247) 93%, rgb(237,237,237) 100%);  FF3.6-15 
+   background: -webkit-linear-gradient(left, rgb(30,24,26) 0%,rgb(247,247,247) 93%,rgb(237,237,237) 100%);  Chrome10-25,Safari5.1-6 
+    background: linear-gradient(to right, rgb(30,24,26) 0%,rgb(247,247,247) 93%,rgb(237,237,237) 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e181a', endColorstr='#ededed',GradientType=1 );  IE6-9 
+   */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,53cbf1+55,ffffff+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+23,ffffff+100 */
+width: 100%;
+height: 100%;  
+color: #000000;
+background: #000000;
+font-size: 1.5vmax;
+color: #FFFFFF;
+}
+footer {
+text-align: center;
+}
+header{
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 1%, rgba(0,0,0,1) 23%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 1%,rgba(0,0,0,1) 23%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(0,0,0,1) 1%,rgba(0,0,0,1) 23%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
