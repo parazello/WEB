@@ -1,19 +1,29 @@
+/*===== 1 =======
+блок логотипа, содержащий два абзаца Grigorii Kurilchenko / photography*/
 .logo{
-    font-size: 1.5vmax;
-    font-family: Bickham Script Two;
+    color: #000000;
     font-stretch:expanded;
-    font-size: 4.5vmax;
-    display : inline-block;
-	   
+    display : inline;
 }
+
+.logo :first-child {
+    font-size: 2.5vmax;
+}
+
+.logo :last-child{
+     font-size: 1.5vmax;
+}
+/*===== 2 =======
+меню навигации по сайту*/
 .menu{
     width:100%;
     list-style:none;
     font-weight:bold;
     margin-bottom:10px;
-    color: rgb(176,176,176);
+    padding-left: 0.4vmax;
+    color: #000000;
     display: inline-block;
-	font-family: StudioScriptC;
+
 }
 .menu div {
     display: inline-block;
@@ -23,27 +33,23 @@
 	margin-right:5px;
 	position:relative;
 	display:block;
-    font-size: 1.5vmax;
+        font-size: 1.5vmax;
      
 }
 .menu ul li a{
 	display:block;
 	padding:5px;
-	color:#fff;
-/*	background:#87CEFA;*/
+	color:#000000;
 	text-decoration:none;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-/*	border-radius:4px;*/
+        box-sizing: border-box;
+	border-bottom: 3px outset transparent;
 
 }
 .menu ul li a:hover{ /*наведение курсора на пункт меню*/
-	color:#fff;
-/*	background:#6495ED;*/
-	border: 3px outset #FFFFFF;
-/*	font-size: 120%;*/
-    box-sizing: border-box;
-    border-radius:20px;
+	color:#000000;
+	border-bottom: 3px solid #000000;
+        box-sizing: border-box;
+
 }
 
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
@@ -55,33 +61,38 @@
 	-webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
 }
 .menu .submenu li{
-	padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+	padding-top:3px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
 	float:none;
 }
 .menu .submenu a{
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
 	display:block;
 	background: #393939;
-	border-radius:20px;
+        color: #FFFFFF;
 }
 .menu li:hover .submenu{ /* Выводим выпадающий пункт при наведении курсора */
 	left:0; /* Приносим его обратно на экран, когда нужно */
 	opacity:1; /* Делаем непрозрачным */
 	z-index: 999;
 }
-.menu li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
-	/*background:#6495ED;*/
-/*		font-size: 120%;*/
-}
+/*.menu li:hover a{  Устанавливаем стили для верхнего уровня, когда выводится выпадающий список 
+        background:#6495ED;
+	font-size: 120%;
+}*/
+
 .menu li:hover submenu a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
 	text-decoration:none;
-	-webkit-transition:-webkit-transform 0.075s linear;
+
 
 }
 .menu li:hover .submenu li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный подпункт меню*/
-	/*background:#6495ED;*/
-	-moz-transform:scale(1.05);
-	-webkit-transform:scale(1.05);
-	border: 3px outset #FFFFFF;
+        color: #97ddf4;
+	border-bottom: 3px outset transparent;
 }
+
+.main_menu{
+    margin-left: 20vmax;
+}
+
+
 
