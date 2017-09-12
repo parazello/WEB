@@ -25,9 +25,7 @@ content: "\f09a";
 }
 .fa-vk:before {
   content: "\f189";
-  border-left: 0.3vmax solid black; 
-  border-right:0.3vmax solid black; 
-  padding: 0 0.5vmin
+  padding: 0 0
 }
 .fa-google-plus:before {
   content: "\f0d5";

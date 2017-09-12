@@ -1,0 +1,19 @@
+/*@font-face {
+  font-family: Bickham Script Two;
+  src: url("fonts/Bickham Script Two.ttf");}
+@font-face {  font-family: StudioScriptC;
+  src: url("fonts/StudioScriptC.otf"); 
+  }*/
+body{
+
+width: 100%;
+height: 100%;  
+color: #000000;
+background: #FFFFFF;
+font-size: 1.5vmax;
+margin:0;
+padding:0;
+}
+footer {
+text-align: center;
+}
