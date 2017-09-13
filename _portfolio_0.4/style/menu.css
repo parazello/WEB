@@ -1,0 +1,125 @@
+﻿/*===== 1 =======
+блок логотипа, содержащий два абзаца Grigorii Kurilchenko / photography*/
+.logo{
+    color: #000000;
+    font-stretch:expanded;
+    display : block;
+    float: left;
+    margin-left: 3vmin;
+    margin-top: 1vmin;
+    max-height:5vmin;
+    align-self: flex-start;
+    flex-grow:6;
+}
+.main_menu{
+    font-size: 0.7vmax;
+    align-self: flex-end;
+
+}
+
+.social-network{
+    margin-left: 3vmin;
+    display: inline-block;
+    padding-right:2vmax;
+}
+
+.logo :first-child {
+    font-size: 3vmin;
+    margin-left: 1vmin;  
+    opacity:1 ;
+}
+
+.logo :last-child{
+    margin-left: 15vmin; 
+    font-size: 1vmax;
+    display: block;
+}
+
+.menu{
+/*    width:100%; - закоментированоб потому что появляется белая полоса*/ 
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    padding-left: 0.4vmin;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index:100;
+    background-color: #ffffff; 
+    width: 100%; 
+    padding-bottom: 2vh;
+    opacity: 1;
+}
+
+.menu div {
+    display: inline-block;
+}
+.menu ul li{
+	float:left;
+/*	margin-right:5px;*/
+	position:relative;
+	display:block;
+    font-size: 1vmax;
+	opacity:1;
+}
+.menu ul li a{
+	display:block;
+	padding:5px;
+	color:#000000;
+	text-decoration:none;
+    box-sizing: border-box;
+	border-bottom: 0.2vmax outset transparent;
+
+}
+.menu ul li a:hover{ /*наведение курсора на пункт меню*/
+	color:#000000;
+/*	border-bottom: 0.2vmax solid #000000;*/
+    box-sizing: border-box;
+    display:block;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+.menu .submenu{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно */
+/*	opacity:1; /* Устанавливаем начальное состояние прозрачности */
+	-webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */	
+	padding:0;
+
+}
+.menu .submenu li{
+	/*padding-top:3px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню*/ 
+	float:none;
+}
+.menu .submenu a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+	background: #FFFFFF;
+    color:#787878;
+	opacity:0.7;
+        
+}
+.menu li:hover .submenu{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; 
+	z-index: 999;	
+/*	opacity:0.7;*/
+}
+
+.menu li:hover submenu a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+	text-decoration:none;
+
+}
+
+.menu li:hover .submenu li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный подпункт меню*/
+/*  border-bottom: 0.2vmax outset black;*/
+	color: #000000;
+	text-align:left;
+	opacity:1;
+}
+
+
+
